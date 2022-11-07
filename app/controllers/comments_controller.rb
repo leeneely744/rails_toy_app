@@ -3,6 +3,8 @@ class CommentsController < ApplicationController
 
   # GET /comments or /comments.json
   def index
+    # @で始まる変数はインスタンス変数と呼ぶ。
+    # コントローラー内で宣言したインスタンス変数はビューで使える
     @comments = Comment.all
   end
 
